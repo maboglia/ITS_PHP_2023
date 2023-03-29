@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione 02</title>
-</head>
-<body>
-    <?php
+<?php include "header.php";
+?>
+<?php include "menu.php";
+?>
+<?php
 
-// $nani = array('pisolo', 'eolo', "cucciolo", 'mammolo','gongolo','brontolo','dotto');
-$nani = ['pisolo', 'eolo', "cucciolo", 'mammolo','gongolo','brontolo','dotto'];
-if ( isset($_GET['ottavo']) ){
-	$nani[] = $_GET['ottavo'];
+$variabile =  isset($_GET['pagina']) ? $_GET['pagina'] :  0 ;
+
+switch ($variabile) {
+	case 1:
+		        include 'view/pagina1.php';
+	
+	break;
+	
+	case 2:
+		        include 'view/pagina2.php';
+	break;
+	
+	case 3:
+	        include 'view/pagina3.php';
+	break;
+	
+	default:
+			        echo "HOME PAGE";
+	break;
 }
 
 
-for ($i=0; $i < count($nani); $i++) {
-	echo "<h2>$nani[$i]</h2>";
-}
+
 
 ?>
-</body>
-</html>
+<?php include "footer.php";
+?>
