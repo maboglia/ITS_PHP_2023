@@ -6,11 +6,11 @@ if ( isset($_GET['pagina'])  ){
    
     switch ($_GET['pagina']) {
         case 'uno':
-            include 'pagine/primi.html';
+            include 'pagine/primi.php';
             break;
         
         case 'due':
-            # code...
+            include 'pagine/form.html';
             break;
         
         case 'tre':
