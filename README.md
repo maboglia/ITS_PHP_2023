@@ -5,21 +5,21 @@ Repo del corso PHP 2023
 
 ## Programma del corso
 
-Costrutti del linguaggio           
+### Costrutti del linguaggio           
 
 * Variabili, tipi di dati, operatori, espressioni           
 * Condizioni, cicli iterativi, gestione stringhe, array, funzioni           
 * Programmazione ad oggetti in PHP           
 * Gestione degli errori e delle eccezioni            
 
-Programmazione per il web           
+### Programmazione per il web           
 
 * Creazione di API in PHP           
 * Upload di file tramite FORM           
 * Utilizzo di Cookie e Sessioni           
 * Web API REST in JSON            
 
-Accesso ai dati           
+### Accesso ai dati           
 
 * Gestione dei files           
 * Accesso ai database (utilizzo di PDO)           
@@ -27,6 +27,6 @@ Accesso ai dati
 * Autoloading delle classi e utilizzo di Composer           
 * Unit Test con PHPUnit            
 
-Preparazione all'esame finale           
+### Preparazione all'esame finale           
 
 * Ripasso generale ed esercitazioni sugli argomenti del corso       
