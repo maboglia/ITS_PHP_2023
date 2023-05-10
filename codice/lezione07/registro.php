@@ -1,22 +1,41 @@
-<?php
+<?php 
 
 include 'user.php';
 
-$studenti = array();
+ class Registro{
 
-$studentiFile = file('studenti.csv');
+    public $studenti =  array(); // Inizializzazione tramite funzione
+    public function __construct()
+    {
+        $this->inizializza();
+    }
 
-foreach ($studentiFile as $studente) {
+    public function inizializza()
+    {
+        $studentiFile = file('studenti.csv');
 
-    $spaccato = explode(",", $studente);
+        foreach($studentiFile as $studente){
+            $spaccato = explode(",", $studente);
+            $this->studenti[] = new Studente($spaccato[0], $spaccato[1]);
+        }
+    }
 
-    $studenti[] = new Studente($spaccato[0], $spaccato[1]);
+    public function login($user, $password)
+    {
+        foreach ($this->studenti as $studente) {
+            if($studente->username == $user && $studente->password == $password){
+                return $studente;
+            }
+        }
+        return "assente";
+    }
+
+
 
 }
 
-
-echo '<pre>';
+/* echo '<pre>';
 print_r($studenti);
-echo '</pre>';
+echo '</pre>'; */
 
-
+?>

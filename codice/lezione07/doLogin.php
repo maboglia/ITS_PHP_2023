@@ -1,32 +1,24 @@
-<?php
+<?php 
 
-var_dump($_POST);
+include 'registro.php';
+
+$registro = new Registro();
+$studente = $registro->login($_POST["username"], $_POST["password"]);
 
 
 
+if(isset ($studente) && $studente != "assente"){
 
-if (    login($_POST['username'],$_POST['password'])       ){
+    session_start();
 
-    header("Refresh:1; url=page2.php");
+    $_SESSION["user"] = $studente;
 
-} else {
-    header("Refresh:1; url=index.php");
+    header("Refresh:1; url=page2.php"); // Se giusto ti porta alla page2
 
-}
+}else{
 
-function login($user, $passw){
-
-    //1 chiedi al database se esiste un user con queste credenziali
-    if (    $user == 'mauro@its.it' && $passw  == 12345    ){
-        return true;
-    } 
-    //2 ritorna user se esiste
-
-    //3 ritorna false senon esiste
-    return false;
-
+    header("Refresh:1; url=index.php"); // Se giusto si ricarica la pagina 
 
 }
 
-
-
+?>
