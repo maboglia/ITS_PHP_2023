@@ -34,36 +34,36 @@ Repo del corso PHP 2023
 
 ## macro
 
-.1: Using PHP
-.2: Variables
-.3: Operators
-.4: String 
-.5: Arrays 
-.6: Conditionals
-.7: Loops 
-.8: Functions 
-.9: Class 
-.10: Inheritance
-.11: Access Levels 
-.12: Static 
-.13: Constants
-.14: Interface
-.15: Abstract
-.16: Traits 
-.17: Importing Files 
-.18: Type Hinting 
-.19: Type Conversions 
-.20: Variable Testing 
-.21: Overloading
-.22: Magic Methods 
-.23: User Input
-.24: Cookies
-.25: Sessions
-.26: Namespaces
-.27: References
-.28: Advanced Variables
-.29: Error Handling
-.30: Exception Handling 
+* Using PHP
+* Variables
+* Operators
+* String 
+* Arrays 
+* Conditionals
+* Loops 
+* Functions 
+* Class 
+* Inheritance
+* Access Levels 
+* Static 
+* Constants
+* Interface
+* Abstract
+* Traits 
+* Importing Files 
+* Type Hinting 
+* Type Conversions 
+* Variable Testing 
+* Overloading
+* Magic Methods 
+* User Input
+* Cookies
+* Sessions
+* Namespaces
+* References
+* Advanced Variables
+* Error Handling
+* Exception Handling 
 
 ## micro
 
