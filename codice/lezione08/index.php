@@ -4,7 +4,6 @@
 
 <?php include 'main/menu.php'; ?>
 
-
-
+<?php include 'main/form.php'; ?>
 
 <?php include 'main/footer.php'; ?>
