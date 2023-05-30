@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+    const URL = '../index.php';
+    const XHR = new XMLHttpRequest();
+
+    XHR.onreadystatechange = function () {
+        if (XHR.readyState == 4 && XHR.status == 200){
+            console.log(JSON.parse(XHR.responseText));
+            const CANZONI = JSON.parse(XHR.responseText);
+
+            const TABLE = document.createElement("table");
+            
+
+            for (const canzone of CANZONI) {
+                const TR = document.createElement("tr");
+
+                const TD_TITOLO = document.createElement("td");
+                TD_TITOLO.textContent = canzone.titolo;
+                TD_TITOLO.setAttribute('style', 'border:1px solid black; padding:.5em;')
+                const TD_CANTANTE = document.createElement("td");
+                TD_CANTANTE.textContent = canzone.cantante;
+                TD_CANTANTE.setAttribute('style', 'border:1px solid red; padding:.5em;')
+
+                TR.append(TD_TITOLO, TD_CANTANTE);
+                TABLE.append(TR);
+            }
+
+            document.body.append(TABLE);
+
+        }
+    }
+
+    XHR.open('get', URL);
+    XHR.send();
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
