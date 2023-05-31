@@ -8,9 +8,9 @@ abstract class Forma {
     abstract public function perimetro();
 
     public function __toString(){
-        return "Forma: " . $this->nome ."<br> "
+        return "*******************<br>Forma: " . $this->nome ."<br> "
             ."Area: " . $this->area() ."<br> "
-            ."Perimetro: " . $this->perimetro() ."<br> "
+            ."Perimetro: " . $this->perimetro() ."<br>*******************<br>";
     }
 
 }
