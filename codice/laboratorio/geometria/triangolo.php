@@ -15,7 +15,10 @@ class Triangolo extends Forma {
     public function area()
     {
         $sp = $this->perimetro()/2;
-        return sqrt( $sp * ($sp-$this->s1) * ($sp-$this->s2) * ($sp-$this->s3) );
+        return sqrt( $sp * 
+            ($sp-$this->s1) * 
+            ($sp-$this->s2) * 
+            ($sp-$this->s3) );
     }
 
     public function perimetro()
