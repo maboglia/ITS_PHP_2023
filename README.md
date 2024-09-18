@@ -32,283 +32,167 @@ Repo del corso PHP 2023
 * Ripasso generale ed esercitazioni sugli argomenti del corso       
 
 
-## macro
+## Corso PHP
 
-* Using PHP
-* Variables
-* Operators
-* String 
-* Arrays 
-* Conditionals
-* Loops 
-* Functions 
-* Class 
-* Inheritance
-* Access Levels 
-* Static 
-* Constants
-* Interface
-* Abstract
-* Traits 
-* Importing Files 
-* Type Hinting 
-* Type Conversions 
-* Variable Testing 
-* Overloading
-* Magic Methods 
-* User Input
-* Cookies
-* Sessions
-* Namespaces
-* References
-* Advanced Variables
-* Error Handling
-* Exception Handling 
+---
 
-## micro
+## PHP Overview
 
+* Cos'è PHP, a cosa serve
+* La storia di PHP
+* Perchè scegliere PHP
 
-### Using PHP 
+---
 
-* Embedding PHP
-* Outputting text
-* Installing a web server
-* Hello world
-* Compile and parse
-* Comments
+## Installazione
 
-### Variables 
+* Installare un Web Server (Apache, Nginx, ...)
+* Modificare la document root
+* Abilitare PHP
+* Configurare PHP
+* Installare e configurare MySQL
+* Le principali istruzioni MySQL
+* Text editor, IDE
 
-* Defining variables
-* Data types
-* Integer type
-* Floating-point type
-* Bool type
-* Null type
-* Default values
+---
 
-### Operators 
+## Primi passi
 
-* Arithmetic operators
-* Assignment operators
-* Combined assignment operators
-* Increment and decrement operators
-* Comparison operators
-* Logical operators
-* Bitwise operators
-* Operator precedence
-* Additional logical operators
+* Incorporare codice PHP in una pagina
+* Mandare in output testo dinamico (generato lato server)
+* Conoscere gli operatori principali
+* Inserire commenti al codice
 
-### String 
+---
 
-* String concatenation
-* Delimiting strings
-* Heredoc strings
-* Nowdoc strings 
-* Escape characters
-* Character reference
-* String compare
+## Tipi di dato
 
-### Arrays 
-
-* Numeric arrays
+* Variabili
+* Costanti
+* Numeri: Integers
+* Numeri: Floating points
+* Booleans
+* NULL e empty
+* Stringhe
+* Arrays
 * Associative arrays
-* Mixed arrays
-* Multi-dimensional arrays
+* Funzioni per String 
+* Funzioni per Array 
+* Type juggling e type casting (conversioni di tipo)
 
-### Conditionals 
+---
 
-* If statement
-* Switch statement
-* Alternative syntax
-* Mixed modes
-* Ternary operator
+## Strutture di controllo - Espressioni Logiche
 
-### Loops 
+* If statements
+* Else e elseif statements
+* Switch statements
+* Operatore ternario (if su una riga)
+* Operatori logici
 
-* While loop
-* Do-while loop
-* For loop
-* Foreach loop
-* Alternative syntax
+---
+
+## Strutture di controllo - Loops
+
+* While e do-while loops
+* For loops
+* Foreach loops
+* Continue
 * Break
-* Continue 
-* Goto
+* Scorrere gli array
 
-### Functions 
+---
 
-* Defining functions
-* Calling functions
-* Function parameters
-* Default parameters
-* Variable parameter list
-* Return statement
-* Scope and lifetime 
-* Anonymous functions
-* Function overloading
-* Built-in functions
+## Funzioni definite dagli utenti
 
-### Class 
+* Definire funzioni
+* Function arguments
+* Ritornare valori da una function
+* Scope e global variables
+* Settare valori di default per gli argomenti 
 
-* Instantiating an object
-* Accessing object members
-* Initial property values
-* Constructor
-* Destructor
-* Case sensitivity
-* Object comparison
+---
 
-### Inheritance 
+## Debugging
 
-* Overriding members 
-* Final keyword 
-* Instanceof operator
+* Problemi comuni
+* Warnings e tipi di errore in PHP
+* Il costrutto try - catch
+* Debugging e troubleshooting
 
-### Access Levels 
+---
 
-* Private access
-* Protected access
-* Public access 
-* Var keyword 
-* Object access
-* Access level guideline
+## Pagine web dinamiche con PHP
 
-### Static 
+* Links e URLs
+* Usare valori inviati via GET
+* Codificare per HTML
+* Including e requiring files
+* Modificare headers
+* Page redirection
+* Output buffering
 
-* Referencing static members
-* Static variables
-* Late static bindings
+---
 
-### Constants 
+## Lavorare con Forms e Form Data
 
-* Const
-* Define
-* Const and define
-* Constant guideline
-* Magic constants
+* Creare form html per inviare dati al server
+* Gestire le form submissions
+* Processare i valori del form html
+* Validare i valori del form
+* Problemi con la validazione
+* Mostrare validazione errori
+* Funzioni custom per la validazione 
+* Single-page form con validazione
 
-### Interface 
+---
 
-* Interface signatures
-* Interface example
-* Interface usages
-* Interface guideline
+## Persistenza con Cookies e Sessions
 
-### Abstract 
+* Lavorare con cookies
+* Settare valori dei cookies 
+* Leggere valori dei cookies 
+* Resettare valori dei cookies 
+* Lavorare con le sessioni
 
-* Abstract methods
-* Abstract example
-* Abstract classes and interfaces
-* Abstract guideline
+---
 
-### Traits 
+## Recap MySQL Base
 
-* Inheritance and traits
-* Trait guideline
+* Intro MySQL 
+* Creare database
+* Creare tabelle e viste
+* Popolare database MySQL 
+* CRUD in MySQL
+* Gestire le tabelle relazionali
 
-### Importing Files 
+---
 
-* Include path
-* Require
-* Include_once
-* Require_once
-* Return
-* Auto load
+## Usare PHP per accedere a MySQL
 
-### Type Hinting 
+* Database APIs in PHP
+* Connettere MySQL con PHP
+* Ricevere dati da MySQL
+* Lavorare con i dati
+* Creare record con PHP
+* Aggiornare ed eliminare record con PHP
+* Prevenire le SQL injection
+* Tecniche di filtro ed escaping strings per MySQL
+* Introduzione ai prepared statements
 
+---
 
-### Type Conversions 
+## OOP in Php
 
-* Explicit casts
-* Settype
-* Gettype
-
-### Variable Testing 
-
-* Isset
-* Empty
-* Is_null
-* Unset
-* Determining types
-* Variable information
-
-### Overloading 
-
-* Property overloading
-* Method overloading
-* Isset and unset overloading
-
-### Magic Methods 
-
-* Tostring
-* Invoke
-* Object serialization
-* Sleep
-* Wakeup
-* Set state
-* Object cloning
-
-### User Input 
-
-* HTML form
-* Sending with post
-* Sending with get
-* Request array
-* Security concerns
-* Submitting arrays
-* File uploading
-* Superglobals
-
-### Cookies 
-
-* Creating cookies
-* Cookie array
-* Deleting cookies
-
-### Sessions 
-
-* Starting a session
-* Session array
-* Deleting a session
-
-### Namespaces 
-
-* Creating namespaces
-* Nested namespaces
-* Alternative syntax
-* Referencing namespaces
-* Namespace aliases
-* Namespace keyword 
-* Namespace guideline
-
-### References 
-
-* Assign by reference
-* Pass by reference
-* Return by reference
-
-### Advanced Variables 
-
-* Curly syntax
-* Variable variable names
-* Variable function names
-* Variable class names
-
-### Error Handling 
-
-* Correcting errors
-* Error levels
-* Error handling environment
-* Custom error handlers
-* Raising errors
-
-### Exception Handling 
-
-* Throwing exceptions
-* Try-catch statement
-* Catch block
-* Finally block
-* Re-throwing exceptions
-* Uncaught exception handler
-* Errors and exceptions
+* Programmare ad Oggetti
+* Modificatori di accesso
+* Metodi Getters e Setters
+* Oggetti e costanti
+* Utilizzo delle costanti globali
+* Oggetti ed Ereditarietà
+* Polimorfismo
+* Classi astratte
+* Interfacce
+* Il namespace
+* Il caricamento automatico delle classi autoload
+* Gestire le dipendenze con composer e packagist
